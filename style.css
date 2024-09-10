@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* a,span{
+    display: block;
+} */
+.c-btn{
+    background-color: red;
+    margin: 1em;
+    padding: 1em;
+    display: inline-block;
+}
+/* <!-- display flexの練習 --> */
+.l-container{
+    background-color:white ;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: red;
+    width: 200px;
+    margin: 20px;
+}
