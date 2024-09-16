@@ -42,9 +42,33 @@
     left: 30px;
     z-index: 2;
 }    
+
 .child2{
     top: 60px;
     left: 60px;
     background-color: blue;
     z-index: 1;
+}
+.eto-list-item{
+  list-style-type: none;
+}
+.eto-list-item a{
+  text-decoration: none;
+  position: relative;
+}
+.eto-list-item a::after{
+  content:"";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color:#122444 ;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.eto-list-item a:hover::after{
+  width:100%;
+  left: 0;
 }
