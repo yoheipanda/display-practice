@@ -56,19 +56,26 @@
   text-decoration: none;
   position: relative;
 }
-.eto-list-item a::after{
+.eto-list-item a:hover::before{
   content:"";
-  display: block;
-  width: 0;
-  height: 1px;
-  background-color:#122444 ;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transition: all 0.5s;
+  background-image: url("../image/1722985423170.png");
+  width: 20px;
+  height: 40px;
+  display: inline-block;
+  background-size:contain ;
 }
 
 .eto-list-item a:hover::after{
   width:100%;
   left: 0;
+}
+/* backgroundの練習 */
+.photo-area{
+  width: 1000px;
+  height: 1000px;
+  background-color: pink;
+  background-image: url("../img/003.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
